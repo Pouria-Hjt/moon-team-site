@@ -1,0 +1,19 @@
+@font-face {
+    font-family: iransans;
+    src: url(../fonts/woff/IRANSansX-Regular.woff) format("woff"), url(../fonts/woff/IRANSansX-Regular.woff2) format("woff2");
+}
+
+body {
+  font-family: iransans;
+  font-size: $font-primary;
+}
+.heading-secondary {
+  font-size: 1.8rem;
+  color: $color-white;
+  cursor: pointer;
+  & .bi {
+    font-size: 2.2rem;
+    color: $color-primary;
+    
+  }
+}

@@ -1,0 +1,63 @@
+:root {
+  --color-primary: #ffde2e;
+  --color-secondary: #756300;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #555;
+  --font-primary: 1.6rem; }
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+@font-face {
+  font-family: iransans;
+  src: url(../fonts/woff/IRANSansX-Regular.woff) format("woff"), url(../fonts/woff/IRANSansX-Regular.woff2) format("woff2"); }
+
+body {
+  font-family: iransans;
+  font-size: var(--font-primary); }
+
+.heading-secondary {
+  font-size: 1.8rem;
+  color: var(--color-white);
+  cursor: pointer; }
+  .heading-secondary .bi {
+    font-size: 2.2rem;
+    color: var(--color-primary); }
+
+.u-margin-right-small {
+  margin-right: .5rem; }
+
+.u-margin-left-small {
+  margin-left: .5rem; }
+
+.pages {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+  .pages__main {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../img/tom-barrett-hgGplX3PFBg-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .pages__main-header {
+      width: 100%;
+      height: 6rem;
+      padding: 3rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center; }
+  .pages__projects {
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(100%) translateX(100%); }

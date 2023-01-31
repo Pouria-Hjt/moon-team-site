@@ -1,0 +1,29 @@
+.pages {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  &__main {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .3) , rgba(0,0,0,.5)), url("../img/tom-barrett-hgGplX3PFBg-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &-header {
+      width: 100%;
+      height: 6rem;
+      padding: 3rem;
+      background-color: rgba(0,0,0, .4);
+      @include flex(row);
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__projects {
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(100%) translateX(100%);
+  }
+}
+

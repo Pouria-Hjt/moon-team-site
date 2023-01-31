@@ -1,0 +1,21 @@
+:root {
+  --color-primary: #ffde2e;
+  --color-secondary: #756300;
+  //--color-tertiary: #;
+
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #555;
+
+  --font-primary: 1.6rem;
+}
+//colors
+
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+$color-white: var(--color-white);
+$color-black: var(--color-black);
+$color-gray: var(--color-gray);
+
+//fonts
+$font-primary: var(--font-primary);
