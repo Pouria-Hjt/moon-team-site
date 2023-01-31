@@ -7,6 +7,13 @@ body {
   font-family: iransans;
   font-size: $font-primary;
 }
+
+.heading-primary {
+  font-size: 4rem;
+  color: $color-white;
+  text-transform: uppercase;
+}
+
 .heading-secondary {
   font-size: 1.8rem;
   color: $color-white;
