@@ -11,12 +11,13 @@
     <title>Moon team</title>
 </head>
 <body>
+<div class="pages-container">
     <div class="pages">
-        <div class="pages__main" data-posX="0" data-posY="0">
+        <div class="page pages__main" data-posX="0" data-posY="0">
             <header class="pages__main-header">
-                <h2 class="heading-secondary"><i class="bi bi-building u-margin-right-small"></i>نمونه کار</h2>
+                <h2 class="heading-secondary"><i class="bi bi-building u-margin-right-small"></i><span>نمونه کار</span></h2>
                 <img src="" alt="moonLogo" class="logo">
-                <h2 class="heading-secondary">درباره<i class="bi bi-person u-margin-left-small"></i></h2>
+                <h2 class="heading-secondary"><span>درباره</span><i class="bi bi-person u-margin-left-small"></i></h2>
             </header>
             <main class="pages__main-main">
                 <div class="banner">
@@ -25,18 +26,21 @@
                         <h1 class="heading-primary">moon team</h1>
                         <h1 class="heading-primary">place for <span class="typed"></span></h1>
                     </div>
-
                 </div>
             </main>
-            <footer class="pages__main-footer"></footer>
+            <footer class="pages__main-footer">
+                <h2 class="heading-secondary"><i class="bi bi-person-lines-fill u-margin-right-small"></i> <span>تماس با ما</span> </h2>
+                <h2 class="heading-secondary"> <span>درباره تیم</span> <i class="bi bi-person-video3 u-margin-left-small"></i></h2>
+
+            </footer>
             <canvas class="particle"></canvas>
         </div>
-        <div class="pages__about" data-posX="1" data-posY="1"></div>
-        <div class="pages__projects" data-posX="-1" data-posY="1"></div>
-        <div class="pages__team" data-posX="-1" data-posY="-1"></div>
-        <div class="pages__contact" data-posX="1" data-posY="-1"></div>
+        <div class="page pages__about" data-posX="-1" data-posY="1"></div>
+        <div class="page pages__projects" data-posX="1" data-posY="1"></div>
+        <div class="page pages__team" data-posX="-1" data-posY="-1"></div>
+        <div class="page pages__contact" data-posX="1" data-posY="-1"></div>
     </div>
-
+</div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="public/vendors/particle.min.js"></script>
     <script src="public/js/index.js" defer></script>

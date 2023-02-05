@@ -1,74 +1,115 @@
-.pages {
-  width: 100vw;
-  height: 100vh;
+.pages-container {
+  position: fixed;
+  transition: transform .3s cubic-bezier(.55, 0, .1, 1);
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  &__main {
+  .pages {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, .3) , rgba(0,0,0,.5)), url("../img/tom-barrett-hgGplX3PFBg-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    &-header {
-      width: 100%;
-      height: 6rem;
-      padding: 3rem;
-      background-color: rgba(0,0,0, .4);
-      @include flex(row);
-      justify-content: space-between;
-      align-items: center;
-    }
-    &-main {
-      width: 100%;
-      height: calc(100% - 6rem);
-      position: relative;
-      & .banner {
-        width: 40%;
-        height: 40rem;
-        padding: 5rem;
-        border-radius: 5rem;
-        background-color: rgba(85,85,85 , .4);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        @include flex(row);
-        justify-content: space-around;
-        align-items: center;
-        z-index: 10;
-        &__text {
-          height: 15rem;
-          width: 50%;
-          text-align: center;
-          @include flex(column);
-          justify-content: space-between;
-          & .heading-primary:last-child {
-            font-size: 2.5rem;
-            & .typed {
-              color: $color-primary;
-            }
-          }
-        }
-        & .logo {
-          height: 30rem;
-        }
+    background-color: #000;
+    perspective: 2000px;
+    transition: transform .3s cubic-bezier(.55, 0, .1, 1);
+    position: relative;
+    & .page {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      background-color: #000;
+      overflow: hidden;
+      transition: transform .3s cubic-bezier(.55, 0, .1, 1);
+      will-change: transform;
+      &[data-posy="1"] {
+        top: -100%;
+      }
+      &[data-posy="-1"] {
+        top: 100%;
+      }
+      &[data-posx="1"] {
+        left: -100%;
+      }
+      &[data-posx="-1"] {
+        left: 100%;
       }
     }
-    & .particle {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      //z-index: -1;
+
+    &__main {
+      width: 100vw;
+      height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 0, .3) , rgba(0,0,0,.5)), url("../img/tom-barrett-hgGplX3PFBg-unsplash.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      @include flex(column);
+
+      &-header {
+        width: 100%;
+        height: 6rem;
+        padding: 3rem;
+        background-color: rgba(0,0,0, .4);
+        @include flex(row);
+        justify-content: space-between;
+        align-items: center;
+      }
+      &-main {
+        width: 100%;
+        height: calc(100% - 12rem);
+        position: relative;
+        & .banner {
+          width: 40%;
+          height: 40rem;
+          padding: 5rem;
+          border-radius: 5rem;
+          background-color: rgba(85,85,85 , .4);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          @include flex(row);
+          justify-content: space-around;
+          align-items: center;
+          z-index: 10;
+          &__text {
+            height: 15rem;
+            width: 50%;
+            text-align: center;
+            @include flex(column);
+            justify-content: space-between;
+            & .heading-primary:last-child {
+              font-size: 2.5rem;
+              & .typed {
+                color: $color-primary;
+              }
+            }
+          }
+          & .logo {
+            height: 30rem;
+          }
+        }
+      }
+      &-footer {
+        width: 100%;
+        height: 6rem;
+        padding: 3rem;
+        background-color: rgba(0,0,0, .4);
+        @include flex(row);
+        justify-content: space-between;
+        align-items: center;
+
+      }
+      & .particle {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+      }
+    }
+
+    &__about {
     }
   }
 
-  &__projects {
-    width: 100vw;
-    height: 100vh;
-    transform: translateY(100%) translateX(100%);
-  }
-}
 
+}
