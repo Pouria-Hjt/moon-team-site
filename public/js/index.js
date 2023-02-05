@@ -32,7 +32,9 @@ const pageMove = [
     {title: "درباره", left: "-100%" , top: "100%"},
     {title: "درباره تیم", left: "-100%" , top: "-100%"},
     {title: "نمونه کار", left: "100%" , top: "100%"},
-    {title: "تماس با ما", left: "100%" , top: "-100%"}
+    {title: "تماس با ما", left: "100%" , top: "-100%"},
+    {title: "صفحه اصلی", left: "0%" , top: "-0%"},
+
 ]
 
 pageSelector.forEach(selector  => {
