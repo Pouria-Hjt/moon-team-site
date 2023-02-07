@@ -4,6 +4,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+
   .pages {
     width: 100vw;
     height: 100vh;
@@ -11,14 +12,22 @@
     perspective: 2000px;
     transition: transform .3s cubic-bezier(.55, 0, .1, 1);
     position: relative;
+    box-shadow: 0 0 1000px 500px #000;
+
     & .page {
       width: 100vw;
       height: 100vh;
       position: absolute;
       background-color: #000;
-      overflow: hidden;
+      overflow-y: scroll;
+      overflow-x: hidden;
       transition: transform .3s cubic-bezier(.55, 0, .1, 1);
       will-change: transform;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+      }
       &[data-posy="1"] {
         top: -100%;
       }
@@ -40,7 +49,6 @@
       background-size: cover;
       background-repeat: no-repeat;
       @include flex(column);
-
       &-header {
         width: 100%;
         height: 6rem;
@@ -49,6 +57,10 @@
         @include flex(row);
         justify-content: space-between;
         align-items: center;
+        & .logo {
+          height: 6rem;
+          margin-right: 1.4rem;
+        }
       }
       &-main {
         width: 100%;
@@ -59,7 +71,6 @@
           height: 40rem;
           padding: 5rem;
           border-radius: 5rem;
-          background-color: rgba(85,85,85 , .4);
           position: absolute;
           top: 50%;
           left: 50%;
@@ -83,9 +94,94 @@
             }
           }
           & .logo {
-            height: 30rem;
+            height: 35rem;
           }
         }
+      }
+      &-btn {
+        width: 5rem;
+        //height: fit-content;
+        border-radius: 0 0 .8rem .8rem;
+        //background-color: rgba(0,0,0, .6);;
+        position: absolute;
+        top: 6rem;
+        right: 50%;
+        transform: translateX(50%);
+        @include flex(column);
+        justify-content: space-around;
+        z-index: 12;
+
+
+        &__container {
+          width: 100%;
+          height: 4rem;
+          @include flex(column);
+          align-items: center;
+          padding: 1rem;
+          background-color: rgba(0,0,0, .6);;
+
+          &-line {
+            width: 3rem;
+            height: 2px;
+            background: $color-white;
+            transition: all .4s ease ;
+
+            &:not(:last-child) {
+              margin-bottom: .5rem;
+            }
+          }
+
+        }
+        &__dropdown {
+          display: none;
+          width: 10rem;
+          height: fit-content;
+          background-color: rgba(0,0,0, .6);;
+          transform: translateX(-2.5rem);
+          color: $color-primary;
+          text-align: center;
+          padding: 1rem .5rem;
+          border-radius: 1rem;
+          transition: all 10s ease;
+
+          &-item {
+            font-size: 1.4rem;
+            cursor: pointer;
+            position: relative;
+            padding: .7rem;
+            &:before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 2px;
+              background-color: $color-secondary;
+              top: 0;
+              right: 0;
+              transform: scale(0);
+              transform-origin: right;
+              transition: transform .6s ease;
+
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 2px;
+              background-color: $color-secondary;
+              bottom: 0;
+              left: 0;
+              transform: scale(0);
+              transform-origin: left;
+              transition: transform .6s ease;
+
+            }
+            &:hover:after , &:hover:before {
+              transform: scale(1);
+
+            }
+          }
+        }
+
       }
       &-footer {
         width: 100%;
@@ -108,8 +204,37 @@
     }
 
     &__about {
+
+    }
+
+    &__projects {
+
+    }
+
+    &__team {
+
+    }
+    &__contact {
+
     }
   }
 
+  .change  {
+    & .pages__main-btn__container-line {
+      &:first-child {
+        transform: rotateZ(45deg) translate(.5rem, .5rem);
+        margin-bottom: 0 !important;
+      }
+      &:nth-child(2) {
+        display: none;
 
+      }
+      &:last-child {
+        transform: rotateZ(-45deg) translate(-.35rem, .3rem);
+      }
+    }
+    & .pages__main-btn__dropdown {
+      display: block;
+    }
+  }
 }

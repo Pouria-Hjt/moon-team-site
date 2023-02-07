@@ -13,3 +13,9 @@ html {
 body {
   background-color: $color-black;
 }
+a ,a:active a:link {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
