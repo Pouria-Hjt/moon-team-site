@@ -4,3 +4,4 @@ libs:
     particle.js
     swiper.js
     typed.js
+    tilt.vanilla.js

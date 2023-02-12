@@ -8,21 +8,26 @@
   .pages {
     width: 100vw;
     height: 100vh;
-    background-color: #000;
+    //background-color: #000;
     perspective: 2000px;
     transition: transform .3s cubic-bezier(.55, 0, .1, 1);
     position: relative;
     box-shadow: 0 0 1000px 500px #000;
+    /// remove this later
+    //left: -100%;
+    //top: 100%;
+
 
     & .page {
       width: 100vw;
       height: 100vh;
       position: absolute;
-      background-color: #000;
       overflow-y: scroll;
       overflow-x: hidden;
       transition: transform .3s cubic-bezier(.55, 0, .1, 1);
       will-change: transform;
+
+
 
       &::-webkit-scrollbar {
         width: 0;
@@ -202,23 +207,7 @@
         z-index: -1;
       }
     }
-
-    &__about {
-
-    }
-
-    &__projects {
-
-    }
-
-    &__team {
-
-    }
-    &__contact {
-
-    }
   }
-
   .change  {
     & .pages__main-btn__container-line {
       &:first-child {

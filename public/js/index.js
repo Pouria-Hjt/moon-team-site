@@ -29,11 +29,10 @@ const $ = document
 const mainPage = $.querySelector(".pages")
 const pageSelector = $.querySelectorAll(".heading-secondary span")
 let pageBtn = $.querySelectorAll(".pages__main-btn__dropdown-item")
-console.log(pageBtn)
 
 const pageMove = [
     {title: "درباره", left: "-100%" , top: "100%"},
-    {title: "درباره تیم", left: "-100%" , top: "-100%"},
+    {title: "اعضا تیم", left: "-100%" , top: "-100%"},
     {title: "نمونه کار", left: "100%" , top: "100%"},
     {title: "تماس با ما", left: "100%" , top: "-100%"},
     {title: "صفحه اصلی", left: "0%" , top: "-0%"},
