@@ -8,14 +8,13 @@
   .pages {
     width: 100vw;
     height: 100vh;
-    //background-color: #000;
     perspective: 2000px;
     transition: transform .3s cubic-bezier(.55, 0, .1, 1);
     position: relative;
     box-shadow: 0 0 1000px 500px #000;
     /// remove this later
-    //left: -100%;
-    //top: 100%;
+    left: -100%;
+    top: -100%;
 
 
     & .page {
@@ -105,9 +104,7 @@
       }
       &-btn {
         width: 5rem;
-        //height: fit-content;
-        border-radius: 0 0 .8rem .8rem;
-        //background-color: rgba(0,0,0, .6);;
+        border-radius: 0 0 2rem 2rem;
         position: absolute;
         top: 6rem;
         right: 50%;
@@ -138,17 +135,16 @@
 
         }
         &__dropdown {
-          display: none;
+          //display: none;
           width: 10rem;
-          height: fit-content;
+          height: 0;
           background-color: rgba(0,0,0, .6);;
           transform: translateX(-2.5rem);
           color: $color-primary;
           text-align: center;
-          padding: 1rem .5rem;
           border-radius: 1rem;
-          transition: all 10s ease;
-
+          transition: all 1s ease;
+          overflow: hidden;
           &-item {
             font-size: 1.4rem;
             cursor: pointer;
@@ -223,7 +219,8 @@
       }
     }
     & .pages__main-btn__dropdown {
-      display: block;
+      height: 15rem;
+      padding: 1rem 0 ;
     }
   }
 }

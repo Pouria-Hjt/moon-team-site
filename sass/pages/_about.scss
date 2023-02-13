@@ -1,5 +1,5 @@
 .pages__about {
-  background-color: #0e0f10;
+  background-color: $color-tertiary;
   height: 100vh;
   position: relative;
 
@@ -28,7 +28,7 @@
   &-main {
     width: calc(100% - 6rem);
     height: calc(100% - 6rem);
-    background-color: #0e0f10;
+    background-color: $color-tertiary;
     position: absolute;
     top: 50%;
     left: 50%;

@@ -8,8 +8,7 @@ window.onload = function() {
 
     });
 };
-
-/// typed.js 
+/// typed.js
 var typed = new Typed('.typed', {
     strings: [
         "developers",
@@ -41,7 +40,7 @@ const pageMove = [
 pageSelector.forEach(selector  => {
     selector.parentElement.addEventListener("click", (event)=> {
         let currentPage = pageMove.find(pages => {
-            return pages.title == selector.innerHTML
+            return pages.title === selector.innerHTML
         })
         mainPage.style.transform = `translateX(${currentPage.left}) translateY(${currentPage.top})`
     })
@@ -49,13 +48,26 @@ pageSelector.forEach(selector  => {
 pageBtn.forEach(selector  => {
     selector.addEventListener("click", (event)=> {
         let currentPage = pageMove.find(pages => {
-            return pages.title == selector.innerHTML
+            return pages.title === selector.innerHTML
         })
         mainPage.style.transform = `translateX(${currentPage.left}) translateY(${currentPage.top})`
     })
 })
 
 const BtnContainer = $.querySelector('.pages__main-btn__container')
+const dropDownContainer = $.querySelector('.pages__main-btn__dropdown')
+BtnContainer.addEventListener("mouseenter", (event) => {
+    BtnContainer.parentElement.classList.add("change")
+})
+BtnContainer.addEventListener("mouseleave", (event) => {
+    BtnContainer.parentElement.classList.remove("change")
+})
+dropDownContainer.addEventListener("mouseenter", (event) => {
+    BtnContainer.parentElement.classList.add("change")
+})
+dropDownContainer.addEventListener("mouseleave", (event) => {
+    BtnContainer.parentElement.classList.remove("change")
+})
 
 BtnContainer.addEventListener("click", (event) => {
     BtnContainer.parentElement.classList.toggle("change")

@@ -6,29 +6,16 @@
   position: relative;
   transition: all .5s ease-in;
   z-index: 100;
-
+  background-color: $color-primary;
+  border-radius: 2.5rem;
   &:link,
   &:active,
   &:-webkit-any-link {
     text-decoration: none;
-    color: white;
-  }
-  &:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    border: 2px solid $color-primary;
-    transform: skewX(20deg);
-    transition: all .3s ease-in;
-
+    color: $color-black;
   }
   &:hover {
-    &:before {
-      animation: fadeInOut .8s ease-in;
-    }
+      animation: fadeInOut .3s ease-in;
   }
 }
 
