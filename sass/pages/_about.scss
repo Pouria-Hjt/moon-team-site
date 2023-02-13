@@ -2,7 +2,7 @@
   background-color: $color-tertiary;
   height: 100vh;
   position: relative;
-
+  overflow: hidden;
   &-sidebar {
     width: 6rem;
     height: 100%;
@@ -36,6 +36,13 @@
     @include flex(column);
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
 
     & .moon-box {
       width: 60%;
