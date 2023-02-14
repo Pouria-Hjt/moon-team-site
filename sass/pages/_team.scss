@@ -50,7 +50,7 @@
 
     & .founder {
       width: 100%;
-      height: 40rem;
+      height: 60rem;
       @include flex(column);
       justify-content: space-around;
       align-items: center;
@@ -73,60 +73,53 @@
         }
       }
       &__box {
-        width: 40%;
-        height: 100%;
-        background-color: #899499;
-        @include flex(row-reverse);
-        align-items: center;
-        justify-content: end;
-        border-radius: 3.5rem;
+        width: 30rem;
+        height: 30rem;
+        overflow: hidden;
+        position: relative;
+        perspective: 1500rem;
+        z-index: 1000;
         &-image {
           height: 30rem;
-          //width: 30%;
-          border-radius: 0 3.5rem 3.5rem  0;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          background-image: url("../img/abol.png");
+          background-size: cover;
+          backface-visibility: hidden;
+          transition: all .6s ;
+          z-index: -1;
+          border-radius: 3.5rem;
 
         }
         &-container {
-          width: 50%;
           height: 100%;
-          text-align: center;
+          width: 100%;
+          background: linear-gradient(-65deg , #899499, $color-ash-gray) ;
+          position: absolute;
+          top: 0;
+          transform: rotateY(180deg);
+          backface-visibility: hidden;
+          transition: all .6s ;
+          border-radius: 3.5rem;
+          padding: 2rem;
           @include flex(column);
           justify-content: space-around;
-          padding: 2rem;
-          &__name {
-            font-size: 2rem;
-            color: $color-primary;
-            cursor: pointer;
+          align-items: center;
 
-          }
-          &__age {
-            font-size: 2.5rem;
-            color: $color-gray;
-            transition: color 0.4s ;
-            cursor: pointer;
-
-            &:hover {
-              color: $color-ash-gray;
-            }
-          }
           &__abilities {
-            width: 100%;
-            height: 40%;
+            height: 30%;
             @include flex(column);
             justify-content: space-around;
-            font-size: 2rem;
-            font-weight: bold;
-            color: $color-gray;
-
-            &-ability {
-              transition: color 0.4s ;
-              cursor: pointer;
-              &:hover {
-                color: $color-ash-gray;
-              }
-            }
           }
         }
+        &:hover .founder__box-image {
+            transform: rotateY(180deg);
+        }
+        &:hover .founder__box-container {
+          transform: rotateY(360deg);
+        }
+
       }
     }
   }

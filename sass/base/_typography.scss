@@ -32,5 +32,25 @@ body {
 .founder__title {
   font-size:3.5rem;
   color: $color-white;
+}
+.founder__box-container {
+  &__name {
+    font-size: 2.5rem;
+    color: $color-primary;
+  }
 
+  &__age {
+    font-size: 2rem;
+    color: $color-secondary;
+  }
+
+  &__abilities {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $color-tertiary;
+
+    &-ability {
+      text-align: center;
+    }
+  }
 }
