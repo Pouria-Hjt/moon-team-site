@@ -8,6 +8,8 @@
 <!--    <link rel="stylesheet" href="css/style.css">-->
     <link rel="stylesheet" href="public/css/style.comp.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Moon team</title>
@@ -81,10 +83,10 @@
                 <h2 class="heading-secondary"><span>درباره</span><i class="bi bi-person u-margin-left-small"></i></h2>
             </header>
             <main class="pages__team-main">
-                <h1 class="heading-primary">اعضای تیم</h1>
-                <div class="founder">
-                    <h3 class="founder__title">بنیان گذار</h3>
-                    <div class="founder__box">
+                <h1 class="heading-primary u-margin-top-large">اعضای تیم</h1>
+                <div class="founder u-margin-top-large">
+                    <h3 class="heading-team">بنیان گذار</h3>
+                    <div class="founder__box  u-margin-top-large">
                         <div class="founder__box-image" ></div>
                         <div class="founder__box-container">
                             <h4 class="founder__box-container__name">ابوالفضل محمدی</h4>
@@ -97,8 +99,57 @@
                         </div>
                     </div>
                 </div>
-                <div class="leader"></div>
-                <div class="co-leader"></div>
+                <div class="leader u-margin-top-large">
+                    <h3 class="heading-team ">لیدر</h3>
+                    <div class="card-container u-margin-top-large mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <img src="public/img/skadi.png" alt="skadi" class="card__image">
+                                <p class="card__name">امیرحسین محبی</p>
+                                <p class="card__age">سن : ۱۸</p>
+                                <span class="card__ability">دولوپر دیسکورد</span>
+                            </div>
+                            <div class="card swiper-slide">
+                                <img src="public/img/abol.png" alt="parzival" class="card__image">
+                                <p class="card__name">ابولفضل محمدی</p>
+                                <p class="card__age">سن : ۲۱</p>
+                                <span class="card__ability">فول استک دولوپر</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="co-leader u-margin-top-large">
+                    <h3 class="heading-team ">لیدر</h3>
+                    <div class="card-container u-margin-top-large mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <img src="public/img/smath.png" alt="parzival" class="card__image">
+                                <p class="card__name">امیرعلی شهسواری </p>
+                                <p class="card__age">سن : ۲۱</p>
+                                <span class="card__ability">دیسکورد دولوپر</span>
+                            </div>
+                            <div class="card swiper-slide">
+                                <img src="public/img/pouria.jpg" alt="parzival" class="card__image">
+                                <p class="card__name">پوریا حاجتی</p>
+                                <p class="card__age">سن : ۱۸</p>
+                                <span class="card__ability">طراح سایت</span>
+                            </div>
+                            <div class="card swiper-slide">
+                                <img src="public/img/Viper_gorgi.png" alt="parzival" class="card__image">
+                                <p class="card__name">سعید وایپر</p>
+                                <p class="card__age">سن : ۱۹</p>
+                                <span class="card__ability">کانفیگر دیسکورد</span>
+                            </div>
+                            <div class="card swiper-slide">
+                                <img src="public/img/ludho.jpg" alt="ludho" class="card__image">
+                                <p class="card__name">لودو محمد پور</p>
+                                <p class="card__age">سن : ۲۰</p>
+                                <span class="card__ability">فول استک دولوپر</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="designer"></div>
                 <div class="sponsor"></div>
             </main>
@@ -112,6 +163,7 @@
 </div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="public/vendors/particle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="public/js/index.js" defer></script>
 </body>
 </html>

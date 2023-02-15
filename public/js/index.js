@@ -72,3 +72,17 @@ dropDownContainer.addEventListener("mouseleave", (event) => {
 BtnContainer.addEventListener("click", (event) => {
     BtnContainer.parentElement.classList.toggle("change")
 })
+
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    }
+});

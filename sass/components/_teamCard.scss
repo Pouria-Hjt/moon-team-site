@@ -1,0 +1,67 @@
+.card {
+  width: 32rem !important;
+  height: 32rem !important;
+  border-radius: 3rem !important;
+  position: relative !important;
+  overflow: hidden !important;
+  backface-visibility: hidden;
+  perspective: 150rem;
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+  &__image {
+    height: 32rem !important;
+    transition: all 0.4s  !important;
+  }
+  &__age {
+    position: absolute !important;
+    left: 2rem !important;
+    bottom: 2rem !important;
+    transform: translateX(-15rem) !important;
+    color: $color-primary !important;
+    font-size: 2rem !important;
+    transition: all 0.4s  !important;
+    font-weight: bold !important;
+  }
+  &__name {
+    position: absolute !important;
+    right: 2rem !important;
+    bottom: 5rem !important;
+    transform: translateX(20rem) !important;
+    color: $color-primary !important;
+    font-size: 2.5rem !important;
+    transition: all 0.4s  !important;
+    font-weight: bold !important;
+  }
+  &__ability {
+    width: fit-content !important;
+    height: fit-content !important;
+    padding: 1rem !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 5rem !important;
+    background: $color-ash-gray !important;
+    border-radius: 0 0 2rem 2rem !important;
+    font-size: $font-primary !important;
+    transform: translateY(-10rem) !important;
+    transition: all 0.4s  !important;
+    color: $color-secondary !important;
+
+
+
+  }
+  &:hover .card__image {
+    opacity: .3 !important;
+    transform: scale(1.2) !important;
+  }
+  &:hover .card__age {
+    transform: translateX(0) !important;
+  }
+  &:hover .card__name {
+    transform: translateX(0) !important;
+  }
+  &:hover .card__ability {
+    transform: translateY(0) !important;
+  }
+
+}

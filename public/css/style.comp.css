@@ -62,20 +62,16 @@ body {
   color: var(--color-primary);
   text-transform: uppercase; }
 
-.founder__title {
-  font-size: 3.5rem;
-  color: var(--color-white); }
-
 .founder__box-container__name {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: var(--color-primary); }
 
 .founder__box-container__age {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--color-secondary); }
 
 .founder__box-container__abilities {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: var(--color-tertiary); }
   .founder__box-container__abilities-ability {
@@ -88,6 +84,9 @@ body {
   margin-left: .5rem; }
 
 .u-margin-bottom-large {
+  margin-top: 5rem; }
+
+.u-margin-top-large {
   margin-top: 5rem; }
 
 .button-primary {
@@ -106,6 +105,78 @@ body {
   .button-primary:hover {
     animation: fadeInOut .3s ease-in; }
 
+.heading-team {
+  position: relative;
+  width: 100%;
+  text-align: right;
+  font-size: 3.5rem;
+  color: var(--color-white); }
+  .heading-team::after {
+    content: "";
+    width: 17rem;
+    height: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: -0.4rem;
+    z-index: -1;
+    background-color: var(--color-secondary);
+    opacity: 0.6;
+    border-radius: 10rem 3rem 8rem 1rem; }
+
+.card {
+  width: 32rem !important;
+  height: 32rem !important;
+  border-radius: 3rem !important;
+  position: relative !important;
+  overflow: hidden !important;
+  backface-visibility: hidden;
+  perspective: 150rem; }
+  .card:not(:last-child) {
+    margin-right: 2rem; }
+  .card__image {
+    height: 32rem !important;
+    transition: all 0.4s  !important; }
+  .card__age {
+    position: absolute !important;
+    left: 2rem !important;
+    bottom: 2rem !important;
+    transform: translateX(-15rem) !important;
+    color: var(--color-primary) !important;
+    font-size: 2rem !important;
+    transition: all 0.4s  !important;
+    font-weight: bold !important; }
+  .card__name {
+    position: absolute !important;
+    right: 2rem !important;
+    bottom: 5rem !important;
+    transform: translateX(20rem) !important;
+    color: var(--color-primary) !important;
+    font-size: 2.5rem !important;
+    transition: all 0.4s  !important;
+    font-weight: bold !important; }
+  .card__ability {
+    width: fit-content !important;
+    height: fit-content !important;
+    padding: 1rem !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 5rem !important;
+    background: var(--color-ash-gray) !important;
+    border-radius: 0 0 2rem 2rem !important;
+    font-size: var(--font-primary) !important;
+    transform: translateY(-10rem) !important;
+    transition: all 0.4s  !important;
+    color: var(--color-secondary) !important; }
+  .card:hover .card__image {
+    opacity: .3 !important;
+    transform: scale(1.2) !important; }
+  .card:hover .card__age {
+    transform: translateX(0) !important; }
+  .card:hover .card__name {
+    transform: translateX(0) !important; }
+  .card:hover .card__ability {
+    transform: translateY(0) !important; }
+
 .pages-container {
   position: fixed;
   transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
@@ -118,7 +189,9 @@ body {
     perspective: 2000px;
     transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
     position: relative;
-    box-shadow: 0 0 1000px 500px #000; }
+    box-shadow: 0 0 1000px 500px #000;
+    left: -100%;
+    top: -100%; }
     .pages-container .pages .page {
       width: 100vw;
       height: 100vh;
@@ -380,7 +453,8 @@ body {
 .pages__team {
   height: 100vh;
   background-color: var(--color-tertiary);
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .pages__team-header {
     height: 6rem;
     width: 100%;
@@ -388,7 +462,9 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    position: fixed;
+    top: 0; }
   .pages__team-sidebar {
     width: 6rem;
     height: 100%;
@@ -413,11 +489,11 @@ body {
     width: calc(100% - 6rem);
     height: calc(100% - 6rem);
     position: absolute;
-    bottom: 0;
+    top: 6rem;
     right: 0;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -430,33 +506,18 @@ body {
       height: 60rem;
       display: flex;
       flex-flow: column nowrap;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       padding: 2rem; }
-      .pages__team-main .founder__title {
-        position: relative;
-        width: 100%;
-        text-align: right; }
-        .pages__team-main .founder__title::after {
-          content: "";
-          width: 17rem;
-          height: 1rem;
-          position: absolute;
-          bottom: 0;
-          right: -0.4rem;
-          z-index: -1;
-          background-color: var(--color-secondary);
-          opacity: 0.6;
-          border-radius: 10rem 3rem 8rem 1rem; }
       .pages__team-main .founder__box {
-        width: 30rem;
-        height: 30rem;
+        width: 35rem;
+        height: 35rem;
         overflow: hidden;
         position: relative;
         perspective: 1500rem;
         z-index: 1000; }
         .pages__team-main .founder__box-image {
-          height: 30rem;
+          height: 35rem;
           width: 100%;
           position: absolute;
           top: 0;
@@ -490,3 +551,36 @@ body {
           transform: rotateY(180deg); }
         .pages__team-main .founder__box:hover .founder__box-container {
           transform: rotateY(360deg); }
+    .pages__team-main .leader {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem; }
+      .pages__team-main .leader .card-container {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center; }
+    .pages__team-main .co-leader {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem; }
+      .pages__team-main .co-leader .card-container {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center; }
+        .pages__team-main .co-leader .card-container .swiper-wrapper {
+          width: 100%;
+          height: 100%; }
