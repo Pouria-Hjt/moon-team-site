@@ -2,3 +2,23 @@
   display: flex;
   flex-flow: $dir nowrap;
 }
+
+/// mediaQueri manager
+
+@mixin respond($breakPoint) {
+  @if $breakPoint == small-phone {
+    @media (max-width: 576px) { @content }
+  }
+  @if $breakPoint == phone {
+    @media (max-width: 767px) { @content }
+  }
+  @if $breakPoint == tablet {
+    @media (min-width: 768px) and (max-width: 1200px) { @content }
+  }
+  @if $breakPoint == small-screen {
+    @media (min-width: 1201px) and (max-width: 1455px) { @content }
+  }
+  @if $breakPoint == big-screen {
+    @media (min-width: 1456px) and (max-width: 1800px) { @content }
+  }
+}

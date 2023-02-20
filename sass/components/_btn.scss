@@ -8,6 +8,15 @@
   z-index: 100;
   background-color: $color-primary;
   border-radius: 2.5rem;
+  @include respond(phone) {
+    width: 20rem;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
   &:link,
   &:active,
   &:-webkit-any-link {

@@ -8,10 +8,20 @@
     width: 100%;
     background-color: $color-black;
     @include flex(row);
-    justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
+    position: relative;
+    z-index: 100;
+    & .heading-secondary {
+      &:first-child {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &:last-child {
+        position: absolute;
+        left: 2rem;
+      }
+    }
   }
   &-sidebar {
     width: 6rem;
@@ -52,59 +62,87 @@
     }
     & .founder {
       width: 100%;
-      height: 60rem;
+      height: 100rem;
       @include flex(column);
       justify-content: space-between;
       align-items: center;
       padding: 2rem;
+
       &__box {
-        width: 35rem;
+        width: 50%;
         height: 35rem;
-        overflow: hidden;
         position: relative;
-        perspective: 1500rem;
-        z-index: 1000;
+
         &-image {
+          width: 35rem;
           height: 35rem;
-          width: 100%;
-          position: absolute;
-          top: 0;
           background-image: url("../img/abol.png");
           background-size: cover;
-          backface-visibility: hidden;
-          transition: all .6s ;
-          z-index: -1;
-          border-radius: 3.5rem;
+          border-radius: 50%;
+          transition: all 0.3s;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          z-index: 10;
+        }
+
+        &-container {
+          width: 30rem;
+          height: 30rem;
+          background: linear-gradient(55deg, $color-gray, $color-secondary);
+          border-radius: 3rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(calc(-50% - 20rem)) translateY(-50%);
+          @include flex(column);
+          align-items: center;
+          justify-content: space-around;
+          opacity: 0;
+          transition: all 0.3s;
 
         }
-        &-container {
-          height: 100%;
-          width: 100%;
-          background: linear-gradient(-65deg , #899499, $color-ash-gray) ;
-          position: absolute;
-          top: 0;
-          transform: rotateY(180deg);
-          backface-visibility: hidden;
-          transition: all .6s ;
-          border-radius: 3.5rem;
-          padding: 2rem;
-          @include flex(column);
-          justify-content: space-around;
-          align-items: center;
 
-          &__abilities {
-            height: 30%;
-            @include flex(column);
-            justify-content: space-around;
+        &:hover .founder__box-image {
+          width: 20rem;
+          height: 20rem;
+          transform: translateX(calc(-50% - -11rem)) translateY(-50%);
+        }
+
+        &:hover .founder__box-container {
+          transform: translateX(calc(-50% - 5rem)) translateY(-50%);
+          opacity: 1;
+        }
+
+        @include respond(phone) {
+          pointer-events: none;
+          &-image {
+            width: 17rem;
+            height: 17rem;
+            transform: translateX(calc(-50% - -8rem)) translateY(-50%);
+          }
+          &-container {
+            width: 20rem;
+            height: 20rem;
+            transform: translateX(calc(-50% - 5rem)) translateY(-50%);
+            opacity: 1;
           }
         }
-        &:hover .founder__box-image {
-            transform: rotateY(180deg);
+        @include respond(tablet) {
+          pointer-events: none;
+          &-image {
+            width: 25rem;
+            height: 25rem;
+            transform: translateX(calc(-50% - -13.5rem)) translateY(-50%);
+          }
+          &-container {
+            width: 30rem;
+            height: 30rem;
+            transform: translateX(calc(-50% - 5rem)) translateY(-50%);
+            opacity: 1;
+          }
         }
-        &:hover .founder__box-container {
-          transform: rotateY(360deg);
-        }
-
       }
     }
     & .leader {
@@ -140,6 +178,52 @@
           height: 100%;
         }
       }
+    }
+    & .designer {
+      width: 100%;
+      height: fit-content;
+      @include flex(column);
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      & .card-container {
+        width: 100%;
+        height: fit-content;
+        @include flex(row);
+        justify-content: space-around;
+        align-items: center;
+        & .swiper-wrapper {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+    }
+    & .sponsor {
+      width: 100%;
+      height: fit-content;
+      @include flex(column);
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      & .card-container {
+        width: 100%;
+        height: fit-content;
+        @include flex(row);
+        justify-content: space-around;
+        align-items: center;
+        & .swiper-wrapper {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+    }
+    @include respond(tablet) {
+      padding: 2rem 1rem;
+    }
+    @include respond(phone) {
+      padding: 2rem 1rem;
     }
   }
 }

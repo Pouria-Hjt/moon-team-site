@@ -30,15 +30,16 @@
     height: calc(100% - 6rem);
     background-color: $color-tertiary;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    top: 0;
+    right: 0;
     @include flex(column);
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
     overflow-x: hidden;
-
+    @include respond(phone) {
+      padding: 2.5rem;
+    }
     &::-webkit-scrollbar {
       width: 0;
       background: transparent;
@@ -53,7 +54,6 @@
       align-items: center;
 
       &__logo {
-        width: 20%;
         height: 25rem;
         transform: rotateZ(-106deg);
       }
@@ -61,11 +61,26 @@
       &__text {
         width: 70%;
         height: 100%;
-        display: grid;
-        place-items: center;
         font-size: 2rem;
         color: $color-white;
         text-align: right;
+        padding: 5rem 0;
+        & a {
+          color: $color-primary;
+        }
+      }
+      @include respond(phone) {
+        width: 95%;
+        height: 80%;
+        flex-flow: column nowrap;
+        &__logo {
+          height: 15rem;
+          transform: rotateZ(-106deg);
+        }
+        &__text {
+          width: 100%;
+
+        }
       }
     }
 
@@ -76,7 +91,12 @@
       justify-content: space-around;
       z-index: 1000;
 
+      @include respond(phone) {
+        flex-wrap: wrap;
+        width: 90%;
+        height: fit-content;
 
+      }
     }
   }
 
@@ -105,6 +125,9 @@
         }
         &:last-child {
           left: 2rem;
+          //@include respond(phone) {
+          //  left: .5rem;
+          //}
         }
       }
     }
