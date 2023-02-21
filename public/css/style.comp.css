@@ -124,6 +124,14 @@ body {
       place-items: center; }
       .button-primary:not(:last-child) {
         margin-bottom: 2rem; } }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .button-primary {
+      width: 20rem;
+      height: 5rem;
+      display: grid;
+      place-items: center; }
+      .button-primary:not(:last-child) {
+        margin-bottom: 2rem; } }
   .button-primary:link, .button-primary:active, .button-primary:-webkit-any-link {
     text-decoration: none;
     color: var(--color-black); }
@@ -249,9 +257,7 @@ body {
     perspective: 2000px;
     transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
     position: relative;
-    box-shadow: 0 0 1000px 500px #000;
-    left: -100%;
-    top: -100%; }
+    box-shadow: 0 0 1000px 500px #000; }
     .pages-container .pages .page {
       width: 100vw;
       height: 100vh;
@@ -464,19 +470,22 @@ body {
   .pages__about-main {
     width: calc(100% - 6rem);
     height: calc(100% - 6rem);
-    background-color: var(--color-tertiary);
     position: absolute;
     top: 0;
     right: 0;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     overflow-y: scroll;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    padding: 20rem 20rem; }
     @media (max-width: 767px) {
       .pages__about-main {
-        padding: 2.5rem; } }
+        padding: 1rem; } }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .pages__about-main {
+        padding: 2rem 2rem; } }
     .pages__about-main::-webkit-scrollbar {
       width: 0;
       background: transparent; }
@@ -510,6 +519,9 @@ body {
             transform: rotateZ(-106deg); }
           .pages__about-main .moon-box__text {
             width: 100%; } }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .pages__about-main .moon-box {
+          width: 80%; } }
     .pages__about-main .moon-btn-container {
       width: 60%;
       height: 20%;
@@ -521,6 +533,11 @@ body {
         .pages__about-main .moon-btn-container {
           flex-wrap: wrap;
           width: 90%;
+          height: fit-content; } }
+      @media (min-width: 768px) and (max-width: 1200px) {
+        .pages__about-main .moon-btn-container {
+          flex-wrap: wrap;
+          width: 40%;
           height: fit-content; } }
   .pages__about-footer {
     width: 100%;
