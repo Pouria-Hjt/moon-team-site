@@ -1,0 +1,25 @@
+{
+  "content": "New Contact form!",
+  "embeds": [
+    {
+      "description": "${value}",
+      "color": 5425412,
+      "fields": [
+        {
+          "name": "Name:",
+          "value": "${name}",
+          "inline": true
+        },
+        {
+          "name": "Email:",
+          "value": "${email}",
+          "inline": true
+        }
+      ],
+      "author": {
+        "name": "${name}"
+      }
+    }
+  ],
+  "attachments": []
+}
