@@ -630,7 +630,76 @@ body {
     .pages__contact-main .contact {
       width: 100%;
       height: 50rem;
-      background-color: #ffde2e; }
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      justify-content: space-between; }
+      .pages__contact-main .contact__form {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-around;
+        overflow: hidden;
+        background-color: black;
+        border-radius: 5px;
+        padding: 1rem; }
+        .pages__contact-main .contact__form-heading {
+          width: calc(100% + 2rem);
+          height: 4rem;
+          border-bottom: 2px solid var(--color-secondary);
+          color: var(--color-white);
+          text-align: right;
+          padding: .5rem 1.5rem; }
+        .pages__contact-main .contact__form-input {
+          width: 80%;
+          height: 4rem;
+          border: none;
+          background: transparent !important;
+          border-bottom: 2px solid var(--color-secondary);
+          border-right: 2px solid var(--color-secondary);
+          padding: 2rem 1rem;
+          font-size: var(--font-primary);
+          direction: rtl;
+          color: var(--color-white);
+          transition: 2s all; }
+          .pages__contact-main .contact__form-input:focus {
+            border-bottom: 2px solid var(--color-primary);
+            border-right: 2px solid var(--color-primary); }
+        .pages__contact-main .contact__form-textarea {
+          width: 80%;
+          height: 30%;
+          padding: 1rem 2rem;
+          direction: rtl;
+          background: transparent;
+          resize: none;
+          font-size: var(--font-primary);
+          border: none;
+          border-bottom: 2px solid var(--color-secondary);
+          border-right: 2px solid var(--color-secondary);
+          color: var(--color-white); }
+        .pages__contact-main .contact__form-button {
+          width: fit-content;
+          height: fit-content;
+          padding: 1rem 2rem;
+          color: var(--color-white);
+          background: transparent;
+          border: none;
+          position: relative;
+          font-size: 1.8rem; }
+          .pages__contact-main .contact__form-button:after {
+            content: "";
+            height: 2px;
+            width: 0;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all .4s;
+            background: #ffde2e;
+            transform-origin: center; }
+          .pages__contact-main .contact__form-button:hover:after {
+            width: 100%; }
 
 .pages__team {
   height: 100vh;

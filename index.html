@@ -140,9 +140,11 @@
                 <h1 class="heading-primary u-margin-top-large">اعضای تیم</h1>
                 <div class="contact">
                     <div class="contact__form">
-                        <input type="text" name="name" id="name" class="contact__form-input contact__form-input__name " placeholder="نام">
-                        <input type="text" name="email" id="email" class="contact__form-input contact__form-input__email " placeholder="ایمیل">
-                        <textarea cols="30" rows="20"></textarea>
+                        <p class="contact__form-heading">فرم تماس</p>
+                        <input type="text" name="name" id="name" class="contact__form-input contact__form-input__name " placeholder="نام" autocomplete="off">
+                        <input type="text" name="email" id="email" class="contact__form-input contact__form-input__email " placeholder="ایمیل" autocomplete="off">
+                        <textarea  class="contact__form-textarea" placeholder="متن پیام"></textarea> <!-- cols="30" rows="10" -->
+                        <button class="contact__form-button" type="submit">ارسال پیغام</button>
                     </div>
                     <div class="contact__information">
 
