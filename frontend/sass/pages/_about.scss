@@ -1,0 +1,146 @@
+.pages__about {
+  background-color: $color-tertiary;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  &-sidebar {
+    width: 6rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: $color-black;
+    @include flex(column);
+    justify-content: center;
+    align-items: center;
+
+    & .heading-secondary {
+      width: 10rem;
+      height: 5rem;
+      transform: rotateZ(-90deg);
+      @include flex(row);
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-main {
+    width: calc(100% - 6rem);
+    height: calc(100% - 6rem);
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include flex(column);
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 20rem 20rem;
+    @include respond(phone) {
+      padding: 1rem;
+    }
+    @include respond(tablet) {
+      padding: 2rem 2rem;
+    }
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+
+    & .moon-box {
+      width: 60%;
+      height: 40%;
+      border-radius: 2.5rem;
+      @include flex(row-reverse);
+      justify-content: space-around;
+      align-items: center;
+
+      &__logo {
+        height: 25rem;
+        transform: rotateZ(-106deg);
+      }
+
+      &__text {
+        width: 70%;
+        height: 100%;
+        font-size: 2rem;
+        color: $color-white;
+        text-align: right;
+        padding: 5rem 0;
+        & a {
+          color: $color-primary;
+        }
+      }
+      @include respond(phone) {
+        width: 95%;
+        height: 80%;
+        flex-flow: column nowrap;
+        &__logo {
+          height: 15rem;
+          transform: rotateZ(-106deg);
+        }
+        &__text {
+          width: 100%;
+
+        }
+      }
+      @include respond(tablet) {
+        width: 80%;
+      }
+    }
+
+    & .moon-btn-container {
+      width: 60%;
+      height: 20%;
+      @include flex(row);
+      justify-content: space-around;
+      z-index: 1000;
+
+      @include respond(phone) {
+        flex-wrap: wrap;
+        width: 90%;
+        height: fit-content;
+      }
+      @include respond(tablet) {
+        flex-wrap: wrap;
+        width: 40%;
+        height: fit-content;
+
+      }
+    }
+  }
+
+  &-footer {
+    width: 100%;
+    height: 6rem;
+    @include flex(row);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $color-black;
+    z-index: 10;
+    &__container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      @include flex(row);
+      align-items: center;
+      & .heading-secondary {
+        position: absolute;
+        &:first-child {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        &:last-child {
+          left: 2rem;
+          //@include respond(phone) {
+          //  left: .5rem;
+          //}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7d6343cf-72b8-4d21-8d15-75851732a7e3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/moonWeb.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.comp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.prefix.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/woff/IRANSansX-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/woff/IRANSansX-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/woff2/IRANSansX-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/woff2/IRANSansX-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/logo svg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/tom-barrett-hgGplX3PFBg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendors/particle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/abstracts/_function.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/abstracts/_mixin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/abstracts/_variable.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/base/_animation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/base/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/base/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/base/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/components/_btn.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/components/_teamCard.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/components/_teamHeading.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/pages/_about.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/pages/_contact.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/pages/_mainPage.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/pages/_team.scss" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2KmYbT2MpO056bdfpruEwvPj4LM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ALPHA/Desktop/surces/Websites/projects/roryWeb&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d6343cf-72b8-4d21-8d15-75851732a7e3" name="Changes" comment="" />
+      <created>1674581298299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674581298299</updated>
+      <workItem from="1674581299854" duration="1485000" />
+      <workItem from="1675161467753" duration="2097000" />
+      <workItem from="1675163589803" duration="10932000" />
+      <workItem from="1675414920258" duration="5000" />
+      <workItem from="1675594992905" duration="469000" />
+      <workItem from="1675620749104" duration="3355000" />
+      <workItem from="1675625603250" duration="5544000" />
+      <workItem from="1675679911086" duration="642000" />
+      <workItem from="1675682797360" duration="2941000" />
+      <workItem from="1675698510304" duration="5211000" />
+      <workItem from="1675708312516" duration="3549000" />
+      <workItem from="1675764085400" duration="4933000" />
+      <workItem from="1676056797360" duration="1036000" />
+      <workItem from="1676125365502" duration="596000" />
+      <workItem from="1676128410744" duration="757000" />
+      <workItem from="1676129182554" duration="6326000" />
+      <workItem from="1676139061438" duration="2867000" />
+      <workItem from="1676204799461" duration="2001000" />
+      <workItem from="1676209411033" duration="256000" />
+      <workItem from="1676273501939" duration="3177000" />
+      <workItem from="1676311733315" duration="8494000" />
+      <workItem from="1676362920525" duration="5768000" />
+      <workItem from="1676397193297" duration="689000" />
+      <workItem from="1676450199117" duration="17969000" />
+      <workItem from="1676536717789" duration="3862000" />
+      <workItem from="1676644477457" duration="8053000" />
+      <workItem from="1676886449838" duration="705000" />
+      <workItem from="1676893628627" duration="4933000" />
+      <workItem from="1676920071322" duration="15000" />
+      <workItem from="1676997148146" duration="9698000" />
+      <workItem from="1677046370177" duration="3826000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

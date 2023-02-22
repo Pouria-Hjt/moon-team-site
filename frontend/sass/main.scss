@@ -1,0 +1,17 @@
+@import "abstracts/mixin";
+@import "abstracts/function";
+@import "abstracts/variable";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/btn";
+@import "components/teamHeading";
+@import "components/teamCard";
+
+@import "pages/mainPage";
+@import "pages/about";
+@import "pages/contact";
+@import "pages/team";
