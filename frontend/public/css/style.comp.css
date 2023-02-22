@@ -258,9 +258,7 @@ body {
     perspective: 2000px;
     transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
     position: relative;
-    box-shadow: 0 0 1000px 500px #000;
-    left: 100%;
-    top: -100%; }
+    box-shadow: 0 0 1000px 500px #000; }
     .pages-container .pages .page {
       width: 100vw;
       height: 100vh;

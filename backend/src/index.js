@@ -5,7 +5,7 @@ config();
 import { createApp } from "./source/utils/createApp.js";
 
 // Getting the Port From Env or Setting It To a Value So It Won't Be Null
-const PORT = process.env.PORT || 25565;
+const PORT = process.env.Port || 4000 ;
 
 // Main Function, If We Ever Had To Use Async
 async function main() {
