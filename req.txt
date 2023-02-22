@@ -1,7 +1,0 @@
-https://html.1webstar.ir/kyle/index-particles.html
-
-libs:
-    particle.js
-    swiper.js
-    typed.js
-    tilt.vanilla.js
