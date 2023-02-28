@@ -28,7 +28,7 @@
     position: absolute;
     right: 2rem;
     bottom: 5rem;
-    transform: translateX(20rem);
+    transform: translateX(40rem);
     color: $color-primary;
     font-size: 2.5rem;
     transition: all 0.4s ;
@@ -101,12 +101,6 @@
       height: 3rem;
 
     }
-    //&:hover .card__image {
-    //  opacity: 1;
-    //  transform: scale(1);
-    //}
-    //&:hover .card__ability {
-    //  transform: translateY(0);
-    //}
+
   }
 }

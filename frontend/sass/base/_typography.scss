@@ -31,6 +31,13 @@ body {
       font-size: 2rem;
     }
   }
+  @include respond(small-phone) {
+    font-size: 1.4rem;
+    & .bi {
+      font-size: 1.8rem;
+    }
+  }
+
 }
 .heading-tertiary {
   font-size: 3rem;

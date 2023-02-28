@@ -1,25 +1,28 @@
 {
-  "content": "New Contact form!",
+  "content": "New contact request",
   "embeds": [
     {
-      "description": "${value}",
-      "color": 5425412,
-      "fields": [
-        {
-          "name": "Name:",
-          "value": "${name}",
-          "inline": true
-        },
-        {
-          "name": "Email:",
-          "value": "${email}",
-          "inline": true
-        }
-      ],
+      "title": "Data:",
+      "description": "`✅`▸**ᴜꜱᴇʀɴᴀᴍᴇ:** \n`${name}`\n───────────────────────\n`🌐`▸**ᴇᴍᴀɪʟ:**\n `${email}`\n───────────────────────\n`📌`▸** ʀᴇϙᴜᴇꜱᴛ:** \n`${value}`",
+      "color": 2961457,
       "author": {
-        "name": "${name}"
+        "name": "New Request",
+        "url": "https://discord.gg/moonteam",
+        "icon_url": "https://cdn.discordapp.com/attachments/1051476931155083286/1078324189787865188/dragon_prof1.png"
+      },
+      "footer": {
+        "text": "ꜱɪᴛᴇ ᴠɪᴇᴡᴇʀ",
+        "icon_url": "https://cdn.discordapp.com/attachments/1051476931155083286/1078326664683073546/logo_server.gif"
+      },
+      "image": {
+        "url": "https://cdn.discordapp.com/attachments/1077872072841232435/1077918827167363112/Bot_Music_Eq_3.gif"
+      },
+      "thumbnail": {
+        "url": "https://cdn.discordapp.com/attachments/1051476931155083286/1078326664683073546/logo_server.gif"
       }
     }
   ],
+  "username": "Web Manager",
+  "avatar_url": "https://cdn.discordapp.com/attachments/1051476931155083286/1078324189787865188/dragon_prof1.png",
   "attachments": []
 }

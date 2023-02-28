@@ -12,7 +12,7 @@ let leader = [
 ]
 let coLeader = [
     {"image": "public/img/pouria.jpg", "imageAlt": "pouria" , "name": "پوریا حاجتی" , "age": "۱۸", "ability": "طراح سایت"},
-    {"image": "public/img/ludho.jpg", "imageAlt": "ludho" , "name": "لودو محمد پور" , "age": "۲۰", "ability": "دولوپر دیسکورد"},
+    {"image": "public/img/ludho.jpg", "imageAlt": "ludho" , "name": "لودو محمد پور" , "age": "۲۰", "ability": "فول استک دولوپر"},
     {"image": "public/img/smath.png", "imageAlt": "smath" , "name": "امیرعلی شهسواری" , "age": "۲۱", "ability": "دولوپر دیسکورد"},
     {"image": "public/img/Viper_gorgi.png", "imageAlt": "viper" , "name": "سعید وایپر" , "age": "۱۹", "ability": "کانفیگر دیسکورد"},
 ]
@@ -110,17 +110,13 @@ const pageMove = [
 
 pageSelector.forEach(selector  => {
     selector.parentElement.addEventListener("click", (event)=> {
-        let currentPage = pageMove.find(pages => {
-            return pages.title === selector.innerHTML
-        })
+        let currentPage = pageMove.find(pages => pages.title === selector.innerHTML)
         mainPage.style.transform = `translateX(${currentPage.left}) translateY(${currentPage.top})`
     })
 })
 pageBtn.forEach(selector  => {
     selector.addEventListener("click", (event) => {
-        let currentPage = pageMove.find(pages => {
-            return pages.title === selector.innerHTML
-        })
+        let currentPage = pageMove.find(pages =>  pages.title === selector.innerHTML)
         mainPage.style.transform = `translateX(${currentPage.left}) translateY(${currentPage.top})`
     })
 })
@@ -156,3 +152,32 @@ var swiper = new Swiper(".mySwiper", {
         slideShadows: true,
     }
 });
+
+// //// project handler 
+const categories = $.querySelectorAll(".project__selector-category")
+const allPreview = $.querySelector(".project__preview-all")
+const discordPreview = $.querySelector(".project__preview-discord")
+const sitePreview = $.querySelector(".project__preview-site")
+categories.forEach((category) => {
+    category.addEventListener("click", async (event) =>{
+        categories.forEach(category => category.classList.remove("active"))
+        event.target.classList.add("active")
+
+        let targetCategory = event.target.innerHTML.trim()
+         if (targetCategory === "همه") {
+             allPreview.style.display = "flex"
+             discordPreview.style.display = "none"
+             sitePreview.style.display = "none"
+        } else if (targetCategory === "دیسکورد") {
+             allPreview.style.display = "none"
+             discordPreview.style.display = "flex"
+             sitePreview.style.display = "none"
+        }  else if (targetCategory === "سایت" ) {
+             allPreview.style.display = "none"
+             discordPreview.style.display = "none"
+             sitePreview.style.display = "flex"
+        }
+
+    })
+})
+
