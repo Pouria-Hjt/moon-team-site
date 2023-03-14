@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--    <link rel="stylesheet" href="css/style.css">-->
+<!--    <link rel="stylesheet" href="public/css/style.css">-->
     <link rel="stylesheet" href="public/css/style.comp.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="public/css/vendors/swiper-bundle.min.css"/>
@@ -74,7 +74,77 @@
 
             </footer>
         </div>
-        <div class="page pages__projects" data-posX="1" data-posY="1"></div>
+        <div class="page pages__projects" data-posX="1" data-posY="1">
+            <div class="pages__projects-sidebar">
+                <h2 class="heading-secondary"><i class="bi bi-person u-margin-right-small"></i><span>درباره</span></h2>
+            </div>
+            <main class="pages__projects-main">
+                <h3 class="heading-tertiary">نمونه پروژه ها</h3>
+                <div class="project">
+                    <div class="project__selector">
+                        <p class="project__selector-category active">همه</p>
+                        <p class="project__selector-category">دیسکورد</p>
+                        <p class="project__selector-category">سایت</p>
+                    </div>
+                    <div class="project__preview">
+                        <div class="project__preview-all">
+                            <a href="#">
+                                <div class="card" data-tilt>
+                                    <img src="public/img/projects/rory.png" alt="rory" class="card__image">
+                                    <p class="card__name">Rory security</p>
+                                    <span class="card__ability">discord bot</span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card" data-tilt>
+                                    <img src="public/img/projects/aura.png" alt="cairo" class="card__image">
+                                    <p class="card__name">Aura music</p>
+                                    <span class="card__ability">discord bot</span>
+                                </div>
+                            </a>
+                            <a href="https://github.com/parzivalw00/ytdl-Downloader">
+                                <div class="card" data-tilt>
+                                    <img src="public/img/projects/cairo.png" alt="cairo" class="card__image">
+                                    <p class="card__name">cairo YT downloader</p>
+                                    <span class="card__ability">Website</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project__preview-discord">
+                            <a href="#">
+                                <div class="card" data-tilt>
+                                    <img src="public/img/projects/rory.png" alt="rory" class="card__image">
+                                    <p class="card__name">Rory security</p>
+                                    <span class="card__ability">discord bot</span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card" data-tilt>
+                                    <img src="public/img/projects/aura.png" alt="cairo" class="card__image">
+                                    <p class="card__name">Aura music</p>
+                                    <span class="card__ability">discord bot</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project__preview-site">
+                            <a href="https://github.com/parzivalw00/ytdl-Downloader">
+                                <div class="card" data-tilt >
+                                    <img src="public/img/projects/cairo.png" alt="cairo" class="card__image">
+                                    <p class="card__name">cairo YT downloader</p>
+                                    <span class="card__ability">Website</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="pages__projects-footer">
+                <div class="pages__projects-footer__container">
+                    <h2 class="heading-secondary"><i class="bi bi-person-lines-fill u-margin-right-small"></i><span>تماس با ما</span></h2>
+                    <h2 class="heading-secondary"><i class="bi bi-person-video3 u-margin-right-small"></i><span>صفحه اصلی</span></h2>
+                </div>
+            </footer>
+        </div>
         <div class="page pages__team" data-posX="-1" data-posY="-1">
             <header class="pages__team-header">
                 <h2 class="heading-secondary"><span>درباره</span><i class="bi bi-person u-margin-left-small"></i></h2>
@@ -143,7 +213,7 @@
                         <p class="contact__form-heading">فرم تماس</p>
                         <input type="text" name="name" id="name" class="contact__form-input contact__form-input__name " placeholder="نام" autocomplete="off">
                         <input type="text" name="email" id="email" class="contact__form-input contact__form-input__email " placeholder="ایمیل" autocomplete="off">
-                        <textarea  class="contact__form-textarea" placeholder="متن پیام" id="value"></textarea> <!-- cols="30" rows="10" -->
+                        <textarea  class="contact__form-textarea" placeholder="متن پیام" id="value"></textarea>
                         <button class="contact__form-button" type="submit" >ارسال پیغام</button>
                     </div>
                     <div class="contact__information">
@@ -172,8 +242,8 @@
     <script src="public/vendors/typed.min.js"></script>
     <script src="public/vendors/particle.min.js"></script>
     <script src="public/vendors/swiper-bundle.min.js"></script>
+    <script src="public/vendors/vanilla-tilt.min.js"></script>
     <script src="public/js/contact.js"></script>
-
     <script src="public/js/index.js" type="module" defer></script>
 
 </body>

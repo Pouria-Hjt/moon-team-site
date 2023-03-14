@@ -11,14 +11,13 @@ formBtn.addEventListener("click",  (event)=> {
         email: emailInput.value,
         value: valueInput.value
     }
-    console.log(JSON.stringify(message))
     fetch('http://localhost:4000/api/contact', {
         method: 'POST',
         headers:    {
-            'Content-Type': 'application/json',
-            "Access-Control-Allow-Origin": "*"        
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(message)
-    }).then(res => console.log(res))
+    })
+        .then(res => console.log(res))
         .catch(err => console.log(err))
 })

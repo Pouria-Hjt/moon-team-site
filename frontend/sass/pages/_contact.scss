@@ -3,6 +3,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  width: 100%;
 
   &-header {
     width: 100%;
@@ -58,6 +59,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 2rem 20rem;
+
     &::-webkit-scrollbar {
       width: 0;
       background: transparent;
@@ -199,6 +201,47 @@
             color: $color-secondary;
           }
         }
+      }
+    }
+    @include respond(tablet) {
+      padding: 0;
+      & .contact {
+        width: 100%;
+        margin-top: 2rem;
+        &__form {
+          width: 50%;
+          height: calc(100% + 5rem);
+        }
+        &__information {
+          width: 30%;
+          margin-top: 2rem;
+        }
+      }
+    }
+    @include respond(phone) {
+      padding: 0;
+      & .contact {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        &__form {
+          width: 90%;
+          height: calc(100% + 5rem);
+        }
+        &__information {
+          width: 90%;
+          margin-top: 2rem;
+        }
+      }
+    }
+    @include respond(small-phone) {
+      .contact__information {
+        &-box {
+          &__text {
+            font-size: 1.4rem;
+          }
+        }
+
       }
     }
   }
